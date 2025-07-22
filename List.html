@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>document</title>
     <script>
-        document.getElementById("Content").innerHTML = "My Name is Hamid Khan"
-    </script>
+  function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+ <head>
 </head>
 <body>
     <ul  style=" border: 2px solid black; height: 20px; width: 30px; padding: 10vw; margin: 10vh; color: rgb(43, 68, 170);"> 
@@ -24,6 +27,9 @@
         <li>Phone</li>
         
     </ol>
-    <h1 id="Content">Name</h1>
+
+
+  <p id="demo">A Paragraph</p>
+  <button type="button" onclick="myFunction()">Try it</button>
 </body>
 </html>
