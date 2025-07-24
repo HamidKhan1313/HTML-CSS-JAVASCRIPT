@@ -11,3 +11,15 @@
     height: 70px;
     width: 70px;
 }
+.outlines{
+    border: 1px solid black;
+    color: red;
+    background-color: teal;
+   
+}
+.text{
+    text-align: right;
+    text-decoration: line-through;
+    line-height: 20px;
+    white-space: nowrap;
+}
