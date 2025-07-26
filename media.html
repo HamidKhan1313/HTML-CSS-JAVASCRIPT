@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML Media Example</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077cc;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    audio, video, embed {
+      display: block;
+      margin: 10px auto;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .missing {
+      color: red;
+      font-style: italic;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎵🎬 HTML Media Elements with Fallbacks</h1>
+
+  <!-- 🎧 Audio 1: Exists -->
+  <section>
+    <h2>🎧 Audio 1 (Exists)</h2>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- 🎧 Audio 2: Missing -->
+  <section>
+    <h2>🎧 Audio 2 (Missing)</h2>
+    <audio controls>
+      <source src="media/nonexistent-audio.mp3" type="audio/mpeg" />
+      <p class="missing">Audio file not found. Please check the path.</p>
+    </audio>
+  </section>
+
+  <!-- 🎬 Video 1: Exists -->
+  <section>
+    <h2>🎬 Video 1 (Exists)</h2>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- 🎬 Video 2: Missing -->
+  <section>
+    <h2>🎬 Video 2 (Missing)</h2>
+    <video controls>
+      <source src="media/missing-video.mp4" type="video/mp4" />
+      <p class="missing">Video file not found. Please check the path.</p>
+    </video>
+  </section>
+
+  <!-- 📄 PDF Embed -->
+  <section>
+    <h2>📄 PDF Plugin Example</h2>
+    <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" height="500px" />
+  </section>
+
+</body>
+</html>
+
