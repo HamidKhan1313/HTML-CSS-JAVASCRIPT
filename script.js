@@ -81,5 +81,20 @@ let jsonString = JSON.stringify(person);
 console.log(jsonString);
 
 //-----------------------------------------------------------------------------------------------
+document.getElementById('myForm').addEventListener('submit', function (e) {
+  e.preventDefault(); // Prevent actual form submission
+
+  // Get form values
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  // Simple validation message
+  const response = document.getElementById('response');
+  response.innerHTML = `✅ Thank you <strong>${name}</strong>! We’ve received your form with email <strong>${email}</strong>.`;
+  response.style.display = 'block';
+
+  // Optional: reset form
+  this.reset();
+});
 
 

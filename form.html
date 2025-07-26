@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Styled HTML Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Complete HTML Form with Input Types</h2>
+
+    <form id="myForm">
+      <!-- Text Input -->
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <!-- Email Input -->
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <!-- Password Input -->
+      <label for="password">Choose Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <!-- Radio -->
+      <label>Choose Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male" /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+      </div>
+
+      <!-- Checkbox -->
+      <label>Select Hobbies:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="hobbies" value="Reading" /> Reading</label>
+        <label><input type="checkbox" name="hobbies" value="Sports" /> Sports</label>
+        <label><input type="checkbox" name="hobbies" value="Music" /> Music</label>
+      </div>
+
+      <!-- Dropdown -->
+      <label for="country">Choose Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select Country--</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+      </select>
+
+      <!-- Textarea -->
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Form</button>
+    </form>
+
+    <!-- Response Message -->
+    <div id="response" class="response-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
